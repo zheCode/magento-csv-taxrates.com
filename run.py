@@ -47,10 +47,10 @@ for index, current in enumerate(readData):
             top = current
             recent = current
 
-for row in writeData:
+for index, row in enumerate(writeData):
+    # Just to see it ourselves in console
     print str(row)
 
-for index, row in enumerate(writeData):
     if index == 0:
         writer.writerow(row)
     else:
